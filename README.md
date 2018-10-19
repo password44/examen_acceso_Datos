@@ -1,8 +1,6 @@
 Examen Acceso a Datos.
 1. Describe las diferencias entre IQueryable e IEnumerable.
-La diferencia principal entre ambas interfaces es que los métodos de extensión definidos en la IQueryable tienen como parámetros objetos Expression en puesto de Func, lo que significa que el delegado que recibe es un árbol de expresiones. Esto ayuda a la hora de realizar consultas SQL, ya que si lo hacemos con IEnumerable entonces las filas son arrastradas a memoria como objetos antes de ejecutar la sentencia mientras que IQueryable puede convertirse a SQL y ejecutarse directamente.
-
-Por tanto, utilizaremos IEnumerable para trabajar con colecciones en la memoria e IQueryable para conexiones con fuentes de datos remotas.
+La diferencia principal entre ambas interfaces es que los métodos de extensión definidos en la IQueryable tienen como parámetros objetos Expression en puesto de Func, lo que significa que el delegado que recibe es un árbol de expresiones. La principal diferencia es que los objetos IQueryable<T> de LINQ usan expresiones en lugar de delegados. Esto quiere decir que la consulta que recibe un predicado tiene forma de árbol de expresiones en lugar de delegado o método. IEnumerable<T> es útil para trabajar con secuencias que se iteran en la memoria, pero IQueryable<T> es ideal con fuentes de datos remotas como una base de datos o servicio web.
 
 2. Dada la siguientes estructuras de datos.
 var a  = new int[]{1,2,3};
