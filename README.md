@@ -27,7 +27,7 @@ Será fácil usar LINQ ahora puesto que los métodos anteriores devuelven objeto
 5. Describe los objetos basicos de ADO.NET y su funcionalidad.
 Los objetos básicos de ADO.NET son Connection que proporciona la conectividad a un origen de datos, Command que permite tener acceso a comandos de base de datos para devolver datos, modificarlos, ejecutar procedimientos almacenados y enviar o recuperar información sobre parámetros (parameters), que son el último de los objetos que conforman, básicamente, ADO.NET.
 
-##6. Escribe con lambda una función capaz de sumar dos números y multiplicarlos, una vez escrito con lambda hacer lo mismo con un método.
+6. Escribe con lambda una función capaz de sumar dos números y multiplicarlos, una vez escrito con lambda hacer lo mismo con un método.
 
 En primer lugar, para crear una lambda, necesitamos una función delegada delegate int Funcion(int a, int b); que recibe dos enteros y devuelve un entero. Digamos que así será el "contrato" que ha de seguir nuestra expresión lambda.
 
