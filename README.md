@@ -46,4 +46,3 @@ static int Producto(int a, int b)
 {
     return a * b;
 }
-que son los métodos Suma y Producto antes definidos con las expresiones lambda y también podremos hacer las asignaciones funcion = Suma; y funcion = Producto;, ejecutándose el último de los métodos al que nuestro puntero funcion está apuntando.
